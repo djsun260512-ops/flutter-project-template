@@ -1,4 +1,4 @@
-# flutter_project_20260605
+# flutter_project_template
 
 A new Flutter project.
 
