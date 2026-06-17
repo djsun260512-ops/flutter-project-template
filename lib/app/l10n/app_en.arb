@@ -5,5 +5,8 @@
   "username": "Username",
   "password": "Password",
   "loginFailed": "Login failed: {error}",
-  "home": "Home"
+  "home": "Home",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "themeSystem": "System"
 }

@@ -9,7 +9,7 @@ class AppLocalizationsZh extends AppLocalizations {
   AppLocalizationsZh([String locale = 'zh']) : super(locale);
 
   @override
-  String get appTitle => 'Flutter 模板';
+  String get appTitle => 'Flutter-Project-Template';
 
   @override
   String get login => '登录';
@@ -27,4 +27,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get home => '首页';
+
+  @override
+  String get themeLight => '浅色';
+
+  @override
+  String get themeDark => '深色';
+
+  @override
+  String get themeSystem => '跟随系统';
 }

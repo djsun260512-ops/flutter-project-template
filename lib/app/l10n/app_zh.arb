@@ -1,9 +1,12 @@
 {
   "@@locale": "zh",
-  "appTitle": "Flutter 模板",
+  "appTitle": "Flutter-Project-Template",
   "login": "登录",
   "username": "用户名",
   "password": "密码",
   "loginFailed": "登录失败：{error}",
-  "home": "首页"
+  "home": "首页",
+  "themeLight": "浅色",
+  "themeDark": "深色",
+  "themeSystem": "跟随系统"
 }
