@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../constants/dio_url.dart';
+
 class DioClient {
   static final DioClient _instance = DioClient._internal();
   factory DioClient() => _instance;
@@ -9,7 +11,9 @@ class DioClient {
 
   DioClient._internal() {
     dio = Dio(BaseOptions(
-      baseUrl: 'https://your-api.com/', // 替换为实际地址
+      baseUrl: DioUrl.baseUrl, // 替换为实际地址
+      contentType: 'application/json; charset=utf-8',
+      responseType: ResponseType.json,
       connectTimeout: const Duration(seconds: 30),
       receiveTimeout: const Duration(seconds: 30),
     ));

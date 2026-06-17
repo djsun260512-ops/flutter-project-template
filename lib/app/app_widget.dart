@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Your App',
+      title: 'flutter-project-template',
       theme: AppTheme.light,
       initialRoute: AppRoutes.login, // 未登录时跳登录页
       getPages: AppRoutes.pages,

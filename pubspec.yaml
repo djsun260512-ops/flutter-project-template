@@ -1,5 +1,5 @@
 name: flutter_project_template
-description: "A new Flutter project."
+description: "A general maintainable and extensible Flutter project template."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -36,6 +36,8 @@ dependencies:
   dio: ^5.4.0                      # 网络请求
   shared_preferences: ^2.2.2       # 本地存储（Key-Value）
   json_annotation: ^4.8.1          # JSON 模型注解
+  encrypt: ^5.0.3                  # 加密库
+  pointycastle: ^3.9.1             # 加密算法库
 
 dev_dependencies:
   build_runner: ^2.4.6
