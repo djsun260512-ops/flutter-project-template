@@ -30,6 +30,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
   
   # 核心基础 (建议使用 GetX 或 Riverpod，此处以 GetX 为例演示路由/状态)
   get: ^4.6.6                      # 状态管理 & 路由
@@ -44,6 +47,7 @@ dev_dependencies:
   json_serializable: ^6.7.1
 
 flutter:
+  generate: true              # 启用代码生成[reference:10]
   uses-material-design: true
   assets:
     - assets/images/               # 记得声明资源目录

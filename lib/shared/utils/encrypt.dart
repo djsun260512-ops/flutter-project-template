@@ -76,7 +76,7 @@ class RSAHelper {
 
   // 用于从字符串中解析公钥
   static Crypto.RSAPublicKey parsePublicKey(String publicKeyPem) {
-    final parser = Crypto.RSAKeyParser();
+    final parser = Cipher.RSAKeyParser();
     return parser.parse(publicKeyPem) as Crypto.RSAPublicKey;
   }
 }

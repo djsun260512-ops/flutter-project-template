@@ -1,0 +1,9 @@
+{
+  "@@locale": "zh",
+  "appTitle": "Flutter 模板",
+  "login": "登录",
+  "username": "用户名",
+  "password": "密码",
+  "loginFailed": "登录失败：{error}",
+  "home": "首页"
+}

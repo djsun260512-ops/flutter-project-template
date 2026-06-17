@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../widgets/login_button.dart';
 import '../controllers/auth_controller.dart';
+import 'package:flutter_project_template/app/l10n/app_localizations.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -17,6 +18,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -29,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
                   username = v;
                 });
               },
-              decoration: const InputDecoration(labelText: 'Username'),
+              decoration: InputDecoration(labelText: l10n.username),
             ),
             TextField(
               onChanged: (v) {
@@ -38,14 +41,19 @@ class _LoginPageState extends State<LoginPage> {
                 });
               },
               obscureText: true,
-              decoration: const InputDecoration(labelText: 'Password'),
+              decoration: InputDecoration(labelText: l10n.password),
             ),
             const SizedBox(height: 20),
             Obx(() => controller.isLoading.value
                 ? const CircularProgressIndicator()
                 : LoginButton(onTap: () => controller.performLogin(username, password))),
             const SizedBox(height: 10),
-            Obx(() => Text(controller.errorMessage.value, style: const TextStyle(color: Colors.red))),
+            Obx(() => Text(
+              controller.errorMessage.value.isNotEmpty 
+                  ? l10n.loginFailed(controller.errorMessage.value) 
+                  : '', 
+              style: const TextStyle(color: Colors.red),
+            )),
           ],
         ),
       ),

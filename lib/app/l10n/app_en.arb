@@ -1,0 +1,9 @@
+{
+  "@@locale": "en",
+  "appTitle": "Flutter Template",
+  "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "loginFailed": "Login failed: {error}",
+  "home": "Home"
+}
