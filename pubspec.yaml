@@ -45,6 +45,9 @@ dependencies:
 dev_dependencies:
   build_runner: ^2.4.6
   json_serializable: ^6.7.1
+  flutter_native_splash: ^2.4.7
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
 
 flutter:
   generate: true              # 启用代码生成[reference:10]
@@ -52,3 +55,41 @@ flutter:
   assets:
     - assets/images/               # 记得声明资源目录
     - assets/fonts/
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.otf
+          weight: 400
+        - asset: assets/fonts/Montserrat-Medium.otf
+          weight: 500
+        - asset: assets/fonts/Montserrat-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/Montserrat-Bold.otf
+          weight: 700
+
+# 确保 flutter_native_splash 配置在 flutter 节点之外
+flutter_native_splash:
+  color_dark: '#ffffff'
+  color: '#ffffff' # 启动屏幕的背景颜色
+  image: assets/splash/splash.png # 启动屏幕的图片路径
+  image_dark: assets/splash/splash.png
+  android: true # 为 Android 启用
+  ios: true # 为 iOS 启用
+
+  android_12:
+    # color_dark: '#ffffff'
+    # color: '#ffffff' # 启动屏幕的背景颜色
+    image: assets/splash/splash.png
+    image_dark: assets/splash/splash.png
+    # icon_background_color: '#ffffff'
+    # icon_background_color_dark: '#ffffff'
+
+  web: false
+
+# 确保 flutter_icons 配置在 flutter 节点之外
+flutter_icons:
+  android: true # 为 Android 启用
+  ios: true # 为 iOS 启用
+  image_path: 'assets/icons/halloween-witch-cap.png' # 图标图片路径
+  # image_path_android: "assets/icon-android.png"  # 如果需要不同的 Android 图标
+  # image_path_ios: "assets/icon-ios.png"  # 如果需要不同的 iOS 图标
