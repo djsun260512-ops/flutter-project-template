@@ -41,6 +41,7 @@ dependencies:
   json_annotation: ^4.8.1          # JSON 模型注解
   encrypt: ^5.0.3                  # 加密库
   pointycastle: ^3.9.1             # 加密算法库
+  flutter_screenutil: ^5.9.3       # 屏幕适配
 
 dev_dependencies:
   build_runner: ^2.4.6

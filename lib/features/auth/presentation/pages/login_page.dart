@@ -36,6 +36,7 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             TextField(
               onChanged: (v) {
+                print('Username changed: $v');
                 setState(() {
                   username = v;
                 });
@@ -44,6 +45,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             TextField(
               onChanged: (v) {
+                print('Password changed: $v');
                 setState(() {
                   password = v;
                 });
@@ -54,7 +56,9 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(height: 20),
             Obx(() => controller.isLoading.value
                 ? const CircularProgressIndicator()
-                : LoginButton(onTap: () => controller.performLogin(username, password))),
+                : LoginButton(onTap: () => {
+                  print('Login button tapped with username: $username and password: $password'),
+                  controller.performLogin(username, password)})),
             const SizedBox(height: 10),
             Obx(() => Text(
               controller.errorMessage.value.isNotEmpty 

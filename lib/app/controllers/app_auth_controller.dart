@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class AuthController extends GetxController {
+class AppAuthController extends GetxController {
   var isLoggedIn = false.obs;
   late SharedPreferences _prefs;
+  
   @override
   Future<void> onInit() async {
     super.onInit();
