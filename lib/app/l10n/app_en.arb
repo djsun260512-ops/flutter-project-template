@@ -8,5 +8,11 @@
   "home": "Home",
   "themeLight": "Light",
   "themeDark": "Dark",
-  "themeSystem": "System"
+  "themeSystem": "System",
+  "settings": "Settings",
+  "themeSettings": "Theme",
+  "accountSettings": "Account",
+  "notificationSettings": "Notifications",
+  "about": "About",
+  "selectTheme": "Select Theme"
 }

@@ -1,6 +1,6 @@
 {
   "@@locale": "zh",
-  "appTitle": "Flutter-Project-Template",
+  "appTitle": "Flutter 模板",
   "login": "登录",
   "username": "用户名",
   "password": "密码",
@@ -8,5 +8,11 @@
   "home": "首页",
   "themeLight": "浅色",
   "themeDark": "深色",
-  "themeSystem": "跟随系统"
+  "themeSystem": "跟随系统",
+  "settings": "设置",
+  "themeSettings": "主题",
+  "accountSettings": "账户",
+  "notificationSettings": "通知",
+  "about": "关于",
+  "selectTheme": "选择主题"
 }

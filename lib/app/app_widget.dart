@@ -28,14 +28,14 @@ class AppWidget extends StatelessWidget {
           initialRoute: AppRoutes.login,
           getPages: AppRoutes.pages,
           // 全局中间件（对所有路由生效）
-          routingCallback: (routing) {
-            // 使用全局路由回调实现简单鉴权
-            final authController = Get.find<AppAuthController>();
-            if (!authController.isLoggedIn.value &&
-                routing?.current != AppRoutes.login) {
-              Get.offNamed(AppRoutes.login);
-            }
-          },
+          // routingCallback: (routing) {
+          //   // 使用全局路由回调实现简单鉴权
+          //   final authController = Get.find<AppAuthController>();
+          //   if (!authController.isLoggedIn.value &&
+          //       routing?.current != AppRoutes.login) {
+          //     Get.offNamed(AppRoutes.login);
+          //   }
+          // },
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
           debugShowCheckedModeBanner: false,
