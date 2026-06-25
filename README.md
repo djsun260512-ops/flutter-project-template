@@ -1,10 +1,10 @@
 # flutter_project_template
 
-A  common general Flutter project template.
+A  common general extendable maintainable  Flutter project template.
 
 ## 项目介绍
 
-该项目是同一个通用的flutter项目，该项目具备以下特质：
+该项目是一个通用的flutter项目，该项目具备以下特质：
 
 - 可测试性：data/repositories 和 domain 可以轻松进行单元测试（Mock）。
 
